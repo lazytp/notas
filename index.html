@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body spellcheck="false">
+
+    <div class="barra-atalho hide">
+        <button>Perda 50%</button>
+        <button>Troca de Senha</button>
+        <button>Troca de E-mail</button>
+        <button>Erro de Provedor</button>
+        <button>Cancelamento</button>
+        <button>Erro no App</button>
+    </div>
+
+    <div class="barra-atalho hide">
+        <button class="etapas">Deletar e reinstalar app</button>
+        <button class="etapas">Desligar e ligar roteador</button>
+        <button class="etapas">Desativar IPv6</button>
+        <button class="etapas">Mudar DNS para 1.1.1.1</button>
+        <button class="etapas">Teste em rede cabeada</button>
+        <button class="etapas">Teste em outra rede</button>
+        <button class="etapas">Limpeza de cache e dados</button>
+        <button class="etapas">Desligar e ligar dispositivo</button>
+        <button class="etapas">Trocar de rede 5G para 2.4G</button>
+        <button class="etapas">Atualizar dispositivo</button>
+        <button class="etapas">Teste no navegador Edge</button>
+        <button class="etapas">Reiniciar o dispositivo</button>
+        <button class="etapas">Atualizar navegador</button>
+        <button class="etapas">Sair e entrar na conta</button>
+        <button class="etapas">Teste de velocidade</button>
+        <button class="etapas">Buscar por atualizações</button>
+        <button class="etapas">Envio de e-mail de resgate de senha</button>
+        <!-- <button class="etapas">Prints de cobrança em anexo</button>
+        <button class="etapas">Compra dentro dos 7 dias</button>
+        <button class="etapas">Cliente nunca perdeu a promoção antes</button> -->
+
+
+                   <!-- <div>Prints de Cobrança em Anexo <input type="checkbox" name="" id=""></div>
+                <div>Reembolso negado<input type="checkbox" name="" id=""></div>
+                <div>Compra dentro dos 7 dias <input type="checkbox" name="" id=""></div>
+                <div>Reembolso realizado <input type="checkbox" name="" id=""></div> -->
+
+    </div>
+
+    <div class="editor-nota">
+
+<!-- #editor -->
+        <div class="dispositivos card">
+            <div class="bigTitle"></div>
+
+            <div class="button-div">
+                <button class="copy-button" onclick="somaEtapa()">Copiar</button>
+                <button class="delete-button" onclick="clearField()">Apagar</button>
+                <button class="restore-button hide">Restaurar</button>
+
+            </div>
+           
+
+            <div>Nome do cliente: <br> <input type="text" id="nome-temp" class="big" autocomplete="off"></div>
+            <div>E-mail: <br> <input type="text" id="mail-temp" class="big" autocomplete="off"></div>
+            <div>Telefone: <br> <input type="text" id="tel-temp" class="big" autocomplete="off"></div>
+            <div>Dispositivo: <br> <input type="text" id="disp-temp" class="big" autocomplete="off"></div>
+            <div>Plano: <br> <input type="text" id="plan-temp" class="big" autocomplete="off"></div>
+            <div>Provedor: <br> <input type="text" id="prov-temp" class="big" autocomplete="off"></div>
+            <div>Protocolo: <br> <input type="text" id="proto-temp" class="big" autocomplete="off"></div>
+
+
+            <br>
+
+            <div class="title">Terceiro:</div>
+            <div>Nome: <br> <input type="text" id="terc-temp" class="big" autocomplete="off"></div>
+            <div>Vínculo: <br> <input type="text" id="vinc-temp" class="big" autocomplete="off" valor="n/a"></div>
+
+            <br>
+
+            <div>Motivo Contato: <br> <textarea name="" autocomplete="off" class="text-fix" id="motivo-temp" rows="5" cols="47"></textarea></div>
+            <div>Resumo Contato: <br> <textarea name="" autocomplete="off" class="text-fix" id="resumo-temp" rows="2" cols="47"></textarea></div>
+            <div>
+                <div class="title">Etapas:</div> <br>
+                <button onclick="somaEtapa()"> Copiar</button>
+                <input type="text" value="" autocomplete="off" class="big" id="etapa1">
+                <input type="text" value="" autocomplete="off" class="big" id="etapa2">
+                <input type="text" value="" autocomplete="off" class="big" id="etapa3">
+                <input type="text" value="" autocomplete="off" class="big" id="etapa4">
+                <input type="text" value="" autocomplete="off" class="big" id="etapa5">
+                <input type="text" value="" autocomplete="off" class="big" id="etapa6">
+                <input type="text" value="" autocomplete="off" class="big" id="etapa7">
+                <input type="text" value="" autocomplete="off" class="big" id="etapa8">
+                <input type="text" value="" autocomplete="off" class="big" id="etapa9">
+                <input type="text" value="" autocomplete="off" class="big" id="etapa10">
+   
+            </div>
+
+            <div>Feedback/Sentimento: <br> <input class="big" autocomplete="off" type="text" id="feed-temp" value="n/a"></div>
+            <div>Status: <br> <input class="big" autocomplete="off" type="text" id="stat-temp"></div>
+            <div>Tag: <br> <input class="big" autocomplete="off" type="text" id="tag-temp"></div>
+
+            <div class="dados-pagamento hide">
+                <label class="title">Dados de Pagamento</label>
+                <div>Bandeira: <br> <select name="" id="">
+                        <option value="">Mastercard</option>
+                        <option value="">Visa</option>
+                        <option value="">Elo</option>
+                        <option value="">Hipercard</option>
+                    </select></div>
+    
+                <div>Banco: <br> <select name="" id="">
+                        <option value="">Nubank</option>
+                        <option value="">Bradesco</option>
+                        <option value="">Banco do Brasil</option>
+                        <option value="">Itaú</option>
+                    </select></div>
+    
+                <div>4 Dígitos: <br> <input type="text" maxlength="4"></div>
+                <div>Nome no Cartão: <br> <input type="text"></div>
+                <div>Data da Cobrança: <br> <input type="text"></div>
+
+                <div class="card-options">
+                    <div>Crédito <input type="checkbox" name="" id=""></div> 
+                    <div>Débito <input type="checkbox" name="" id=""></div> 
+                    <div>Físico <input type="checkbox" name="" id=""></div> 
+                    <div>Digital <input type="checkbox" name="" id=""></div> 
+
+                </div>
+
+                
+                <!-- <div>Prints de Cobrança em Anexo <input type="checkbox" name="" id=""></div>
+                <div>Reembolso negado<input type="checkbox" name="" id=""></div>
+                <div>Compra dentro dos 7 dias <input type="checkbox" name="" id=""></div>
+                <div>Reembolso realizado <input type="checkbox" name="" id=""></div> -->
+
+            </div>
+
+           
+
+            <!-- <label for="" class="title">Troubleshootings</label>
+            <label>Reinstalar o App <input type="checkbox" name="" id=""></label>
+            <label>Resetar o Roteador <input type="checkbox" name="" id=""></label>
+            <label>Desativar IPv6 <input type="checkbox" name="" id=""></label>
+            <label>Mudar o DNS (1.1.1.1) <input type="checkbox" name="" id=""></label>
+            <label>Testar Rede Cabeada <input type="checkbox" name="" id=""></label>
+            <label>Testar em Outra Rede <input type="checkbox" name="" id=""></label>
+            <label>Limpar Cache e Dados <input type="checkbox" name="" id=""></label>
+            <label>Desligar e ligar dipositivo <input type="checkbox" name="" id=""></label> -->
+        </div>
+
+        <!-- <div>
+            <label for="">Testes</label>
+            <select name="" id="">
+                <option value="">WhatsMyIpAdress</option>
+                <option value="">Static</option>
+            </select>
+        </div> -->
+
+
+        <!-- TESTES -->
+        <!-- <div class="speedtest small-card">
+            <label class="title">Testes</label>
+            <label>Speedtest
+                <input type="checkbox" name="" id="">
+            </label>
+            <label>Download: <input type="text" name="" id="" maxlength="3"></label>
+            <label>Upload: <input type="text" name="" id="" maxlength="3"></label>
+            <label>Ping: <input type="text" maxlength="2"></label>
+            <label>Static: <input type="text"></label>
+            <label>WhatsMyIpAdress: <br> Fora da área de cobertura <input type="checkbox"> <br>
+                Dentro da área de cobertura <input type="checkbox"></label>
+
+
+
+            <label class="title">Dados do Dispositivo</label>
+            <label>Marca: <input type="text"></label>
+            <label>Modelo: <input type="text"></label>
+            <label>Sistema Operacional: <input type="text"></label>
+            <label>Versão do App Max: <input type="text"></label>
+
+          
+                <label class="title">Notas</label>
+                <label>Caso será escalonado <input type="checkbox" name="" id=""></label>
+                <label>Enviei o e-mail de Troca de Senha <input type="checkbox" name="" id=""></label>
+                <label>Auxiliei o Cliente a Logar na TV <input type="checkbox" name="" id=""></label>
+                <label>Caso já Escalonado <input type="checkbox" name="" id=""></label>
+                <label>Redirecionado ao Provedor <input type="checkbox" name="" id=""></label>
+                <label>Ajudei o cliente a assinar um plano <input type="checkbox" name="" id=""></label>
+                <label>E-mail Antigo: <input type="text"></label>
+                <label>E-mail Novo: <input type="text"></label>
+    
+                
+    
+
+        </div> -->
+
+
+
+        <!-- #NOTA -->
+
+        <div class="hide">
+            <label class="bigTitle">✨ Nota Final 🌠</label>
+            <br>
+            <!-- <div>⭐:  <input type="text" name="" id="proto-nota" class="transparent"></div> -->
+            <br>  
+
+            <!-- <div>🔐 Dados de Verificação</div>
+            <div>Nome: <input type="text" name="" id="nome-nota" class="transparent"></div>
+            <div>E-mail: <input type="text" name="" id="mail-nota" class="transparent"></div>
+            <div>Telefone: <input type="text" name="" id="tel-nota" class="transparent"> </div>
+            <div>Dispositivo: <input type="text" name="" id="disp-nota" class="transparent"></div>
+            <div>Plano: <input type="text" name="" id="plan-nota" class="transparent"></div>
+            <div>Provedor: <input type="text" name="" id="prov-nota" class="transparent"></div> -->
+
+            <div>
+                <textarea name="" id="nome-nota" cols="41" rows="50" class="textarea"></textarea>
+            </div>
+
+            <br>
+
+            <div>🙎‍♂️ Quem entra em contato</div>
+            <div>Nome: <input type="text" name="" id="terc-nota" class="transparent"></div>
+            <div>Vínculo: <input type="text" name="" id="vinc-nota" class="transparent" valor="n/a"></div>
+
+            <br>
+
+            <div>📞 Motivo do contato: <br>
+                <textarea name="" id="motivo-nota" rows="4" cols="41" class="textarea"></textarea>
+            </div>
+            
+
+            <br>
+
+            <div>📄 Resumo do contato: <input type="text" name="" id="resumo-nota" class="transparent"></div>
+
+            <br>
+
+            <div>
+                📋 Etapas de resolução: <br>
+                <textarea name="" id="etapas-nota" cols="41" rows="12" class="textarea"></textarea>
+            </div>
+
+            <br>
+
+            <div>🙎 Feedback/Sentimeto:</div>
+            <div>🏅 Status:</div>
+
+            <br>
+
+            <div>🏷️ Tag:</div>
+
+            <br>
+
+            <div>💵 Dados de Pagamento</div>
+            <div>💳 Nome no Cartão: </div>
+            <div>🏦 Banco:</div>
+            <div>🏁 Bandeira:</div>
+            <div>💳 4 Dígitos: </div>
+            <div>💳 Modalidade: </div>
+            <div>💳 Tipo: </div>
+            <div>📅 Data da Cobrança: </div>
+            <div>📷 Prints de Cobrança: em anexo</div>
+
+            <br>            
+
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
