@@ -83,20 +83,22 @@ function somaEtapa(){
   'Nome: ' + terc_temp.value + '\n' + 
   'Vínculo: ' + vinc_temp.value + '\n' + '\n' +
 
-  '📞 Motivo do contato: ' + motivo_temp.value + '\n' + '\n' +
+  
+  '📞 Telefone: ' + tel_temp.value + '\n' + '\n' +
+  '📌 Motivo do contato: ' + motivo_temp.value + '\n' + '\n' +
   '📄 Resumo do contato: ' + resumo_temp.value + '\n' + '\n' +
   '📋 Etapas de resolução: ' + '\n' + 
-  '→ ' + etapa1.value + '\n' + 
-  '→ ' + etapa2.value + '\n' + 
-  '→ ' + etapa3.value + '\n' + 
-  '→ ' + etapa4.value + '\n' + 
-  '→ ' + etapa5.value + '\n' + 
-  '→ ' + etapa6.value + '\n' + 
-  '→ ' + etapa7.value + '\n' + 
-  '→ ' + etapa8.value + '\n' + 
-  '→ ' + etapa9.value + '\n' + 
+  '→ ' + etapa1.value + '\n' + '\n' + 
+  '→ ' + etapa2.value + '\n' + '\n' +
+  '→ ' + etapa3.value + '\n' + '\n' +
+  '→ ' + etapa4.value + '\n' + '\n' +
+  '→ ' + etapa5.value + '\n' + '\n' +
+  '→ ' + etapa6.value + '\n' + '\n' +
+  '→ ' + etapa7.value + '\n' + '\n' +
+  '→ ' + etapa8.value + '\n' + '\n' +
+  '→ ' + etapa9.value + '\n' + '\n' +
   '→ ' + etapa10.value + '\n' + '\n' + 
-  '🙎 Feedback/Sentimeto: ' + feed_temp.value + '\n' + '\n' +
+  '🙎 Feedback/Sentimento: ' + feed_temp.value + '\n' + '\n' +
   '🏅 Status: ' + stat_temp.value + '\n' + '\n' +
   '🏷️ Tag: ' + tag_temp.value  
   ;
