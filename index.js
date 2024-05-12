@@ -11,7 +11,9 @@ function copiar(text) {
   .catch(err => {
     console.error('Could not copy text: ', err);
   });
+  
 }
+
 
 function clearField() {
    document.getElementById('nome-temp').value = "";
@@ -39,68 +41,202 @@ function clearField() {
   document.getElementById('etapa8').value = ""; 
   document.getElementById('etapa9').value = ""; 
   document.getElementById('etapa10').value = ""; 
+  document.getElementById('etapa11').value = ""; 
+  document.getElementById('etapa12').value = ""; 
+  document.getElementById('etapa13').value = ""; 
+  document.getElementById('etapa14').value = ""; 
+  document.getElementById('etapa15').value = ""; 
+}
+
+let simbolo = "• "
+
+function symbol1(){
+  simbolo = "• "
+}
+function symbol2(){
+  simbolo = "— "
+}
+function symbol3(){
+  simbolo = "» "
+}
+function symbol4(){
+  simbolo = "→ "
 }
 
 function somaEtapa(){  
 
-  const etapa1 = document.getElementById('etapa1');
-  const etapa2 = document.getElementById('etapa2');
-  const etapa3 = document.getElementById('etapa3');
-  const etapa4 = document.getElementById('etapa4');
-  const etapa5 = document.getElementById('etapa5');
-  const etapa6 = document.getElementById('etapa6');
-  const etapa7 = document.getElementById('etapa7');
-  const etapa8 = document.getElementById('etapa8');
-  const etapa9 = document.getElementById('etapa9');
-  const etapa10 = document.getElementById('etapa10');
+  let etapa1 = simbolo + document.getElementById('etapa1').value;
+  let etapa2 = simbolo + document.getElementById('etapa2').value;
+  let etapa3 = simbolo + document.getElementById('etapa3').value;
+  let etapa4 = simbolo + document.getElementById('etapa4').value;
+  let etapa5 = simbolo + document.getElementById('etapa5').value;
+  let etapa6 = simbolo + document.getElementById('etapa6').value;
+  let etapa7 = simbolo + document.getElementById('etapa7').value;
+  let etapa8 = simbolo + document.getElementById('etapa8').value;
+  let etapa9 = simbolo + document.getElementById('etapa9').value;
+  let etapa10 = simbolo + document.getElementById('etapa10').value;
+  let etapa11 = simbolo + document.getElementById('etapa11').value;
+  let etapa12 = simbolo + document.getElementById('etapa12').value;
+  let etapa13 = simbolo + document.getElementById('etapa13').value;
+  let etapa14 = simbolo + document.getElementById('etapa14').value;
+  let etapa15 = simbolo + document.getElementById('etapa15').value;
 
-  let nome_temp = document.getElementById('nome-temp');
-  let mail_temp = document.getElementById('mail-temp');
-  let tel_temp = document.getElementById('tel-temp');
-  let disp_temp = document.getElementById('disp-temp');
-  let plan_temp = document.getElementById('plan-temp');
-  let prov_temp = document.getElementById('prov-temp');
-  let proto_temp = document.getElementById('proto-temp');
-  let terc_temp = document.getElementById('terc-temp');
-  let vinc_temp = document.getElementById('vinc-temp');
+  let nome_temp = document.getElementById('nome-temp').value;
+  let mail_temp = document.getElementById('mail-temp').value;
+  let tel_temp = document.getElementById('tel-temp').value;
+  let tel_temp2 = document.getElementById('tel-temp').value;
+  let disp_temp = document.getElementById('disp-temp').value;
+  let plan_temp = document.getElementById('plan-temp').value;
+  let prov_temp = document.getElementById('prov-temp').value;
+  let proto_temp = '⭐: ' + document.getElementById('proto-temp').value;
+  let terc_temp = document.getElementById('terc-temp').value;
+  let vinc_temp = document.getElementById('vinc-temp').value;
   let motivo_temp = document.getElementById('motivo-temp');
-  let resumo_temp = document.getElementById('resumo-temp');
+  let resumo_temp = '📄 Resumo do contato: ' + document.getElementById('resumo-temp').value;
   let feed_temp = document.getElementById('feed-temp');
   let stat_temp = document.getElementById('stat-temp');
-  let tag_temp = document.getElementById('tag-temp'); 
+  let tag_temp = '🏷️ Tag: ' + document.getElementById('tag-temp').value; 
 
-  let nota_final = 
-  '⭐: ' + proto_temp.value + '\n' + '\n' +
-  '🔐 Dados de Verificação' + '\n' +
-  'Nome: ' + nome_temp.value + '\n' + 
-  'E-mail: ' + mail_temp.value + '\n' + 
-  'Telefone: ' + tel_temp.value + '\n' + 
-  'Dispositivo: ' +disp_temp.value + '\n' + 
-  'Plano: ' + plan_temp.value + '\n' + 
-  'Provedor: ' + prov_temp.value + '\n' + '\n' + 
+  if (etapa1 == simbolo ){
+    etapa1 = ""
+  } else (etapa1 = etapa1 + '\n' + '\n')
 
-  '🙎‍♂️ Quem entra em contato' + '\n' +
-  'Nome: ' + terc_temp.value + '\n' + 
-  'Vínculo: ' + vinc_temp.value + '\n' + '\n' +
+  if (etapa2 == simbolo){
+    etapa2 = ""
+  } else (etapa2 = etapa2 + '\n' + '\n')
+
+  if (etapa3 == simbolo){
+    etapa3 = ""
+  } else (etapa3 = etapa3 + '\n' + '\n')
+
+  if (etapa4 == simbolo){
+    etapa4 = ""
+  } else (etapa4 = etapa4 + '\n' + '\n')
+
+  if (etapa5 == simbolo){
+    etapa5 = ""
+  } else (etapa5 = etapa5 + '\n' + '\n')
+
+  if (etapa6 == simbolo){
+    etapa6 = ""
+  } else (etapa6 = etapa6 + '\n' + '\n')
+
+  if (etapa7 == simbolo){
+    etapa7 = ""
+  } else (etapa7 = etapa7 + '\n' + '\n')
+  
+  if (etapa8 == simbolo){
+    etapa8 = ""
+  } else (etapa8 = etapa8 + '\n' + '\n')
+
+  if (etapa9 == simbolo){
+    etapa9 = ""
+  } else (etapa9 = etapa9 + '\n' + '\n')
+
+  if (etapa10 == simbolo){
+    etapa10 = ""
+  } else (etapa10 = etapa10 + '\n' + '\n')
+
+  if (etapa11 == simbolo){
+    etapa11 = ""
+  } else (etapa11 = etapa11 + '\n' + '\n')
+
+  if (etapa12 == simbolo){
+    etapa12 = ""
+  } else (etapa12 = etapa12 + '\n' + '\n')
+
+  if (etapa13 == simbolo){
+    etapa13 = ""
+  } else (etapa13 = etapa13 + '\n' + '\n')
+
+  if (etapa14 == simbolo){
+    etapa14 = ""
+  } else (etapa14 = etapa14 + '\n' + '\n')
+
+  if (etapa15 == simbolo){
+    etapa15 = ""
+  } else (etapa15 = etapa15 + '\n' + '\n')
+  
+  if (tag_temp == '🏷️ Tag: '){
+    tag_temp = ""
+  } else (tag_temp = '\n' + '\n' + tag_temp)
+
+  if (nome_temp == ''){
+    nome_temp = ""
+  } else (nome_temp = '🔐 Dados de Verificação' + '\n' +
+  'Nome: ' + nome_temp)
+
+  if (mail_temp == ''){
+    mail_temp = ""
+  } else (mail_temp = '\n' + 'E-mail: ' + mail_temp)
+
+  if (tel_temp == ''){
+    tel_temp = ""
+  } else (tel_temp = '\n' + 'Telefone: ' + tel_temp)
+
+  if (tel_temp2 == ''){
+    tel_temp2 = ""
+  } else (tel_temp2 = '\n' + '\n' + '📞 Telefone: ' + tel_temp2)
+  
+  if (disp_temp == ''){
+    disp_temp = ""
+  } else (disp_temp = '\n' + 'Dispositivo: ' + disp_temp)
+  
+  if (plan_temp == ''){
+    plan_temp = ""
+  } else (plan_temp = '\n' + 'Plano: ' + plan_temp)
+
+  if (prov_temp == ''){
+    prov_temp = ""
+  } else (prov_temp = '\n' + 'Provedor: ' + prov_temp)
+
+  if (proto_temp == '⭐: '){
+    proto_temp = ""
+  } else (proto_temp = proto_temp + '\n')
+
+  if (resumo_temp == '📄 Resumo do contato: '){
+    resumo_temp = ""
+  } else (resumo_temp = resumo_temp + '\n' + '\n')
 
   
-  '📞 Telefone: ' + tel_temp.value + '\n' + '\n' +
+
+  if (terc_temp == ''){
+    terc_temp = ""
+  } else ( terc_temp = '\n' + '\n' + '🙎‍♂️ Quem entra em contato' + '\n' +
+  'Nome: ' + terc_temp + '\n' + "Vínculo: " + vinc_temp) 
+
+
+
+  let nota_final = 
+  proto_temp +
+  nome_temp + 
+  mail_temp +  
+  tel_temp + 
+  disp_temp + 
+  plan_temp +
+  prov_temp + 
+  terc_temp +  
+  tel_temp2 + '\n' + '\n' +
   '📌 Motivo do contato: ' + motivo_temp.value + '\n' + '\n' +
-  '📄 Resumo do contato: ' + resumo_temp.value + '\n' + '\n' +
+  resumo_temp +
   '📋 Etapas de resolução: ' + '\n' + 
-  '→ ' + etapa1.value + '\n' + '\n' + 
-  '→ ' + etapa2.value + '\n' + '\n' +
-  '→ ' + etapa3.value + '\n' + '\n' +
-  '→ ' + etapa4.value + '\n' + '\n' +
-  '→ ' + etapa5.value + '\n' + '\n' +
-  '→ ' + etapa6.value + '\n' + '\n' +
-  '→ ' + etapa7.value + '\n' + '\n' +
-  '→ ' + etapa8.value + '\n' + '\n' +
-  '→ ' + etapa9.value + '\n' + '\n' +
-  '→ ' + etapa10.value + '\n' + '\n' + 
+  etapa1 + 
+  etapa2 + 
+  etapa3 + 
+  etapa4 + 
+  etapa5 + 
+  etapa6 + 
+  etapa7 + 
+  etapa8 + 
+  etapa9 + 
+  etapa10 + 
+  etapa11 + 
+  etapa12 + 
+  etapa13 + 
+  etapa14 + 
+  etapa15 +
   '🙎 Feedback/Sentimento: ' + feed_temp.value + '\n' + '\n' +
-  '🏅 Status: ' + stat_temp.value + '\n' + '\n' +
-  '🏷️ Tag: ' + tag_temp.value  
+  '🏅 Status: ' + stat_temp.value + tag_temp 
   ;
 
   document.getElementById('etapas-nota').value = 

@@ -14,9 +14,16 @@
 
 }
 
+.flex{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
 button {
-    height: 40px;
-    width: 395px;
+    height: 38px;
+    width: 354px;
 
   
 
@@ -28,8 +35,6 @@ button {
     font-weight: 500;
 
     background-color: rgb(108, 195, 253);
-
-
 
 
 }
@@ -115,9 +120,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    gap: 10px;
-
-   
+    gap: 10px;  
 
 
 }
@@ -129,7 +132,7 @@ body {
 
     letter-spacing: -1px;
 
-    color: rgb(235, 108, 108);
+    color: rgb(187, 187, 187);
 
 
     
@@ -188,6 +191,28 @@ input {
     text-indent: 10px;
 
 
+}
+
+span{
+    margin-left: 2px;   
+    
+}
+
+.square{
+    display: flex;
+  
+}
+
+.simbolos{
+    width: 18.8px;
+    height: 18.8px;
+    border-radius: 4px;   
+    display: flex;
+    align-content: center;
+    justify-content: center; 
+    font-size: 12px;
+
+    background-color: rgb(189, 189, 189);
 }
 
 .bigTitle {

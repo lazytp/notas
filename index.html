@@ -61,33 +61,72 @@
             <div class="button-div">
                 <button class="copy-button" onclick="somaEtapa()">Copiar</button>
                 <button class="delete-button" onclick="clearField()">Apagar</button>
-                <button class="restore-button hide">Restaurar</button>
+                <button class="restore-button hide">Restaurar</button>    
+                
+                
+                <div class="square">
+
+                    <div>
+                        <button onclick="symbol1()" class="simbolos">•</button>
+                        <button onclick="symbol2()" class="simbolos">—</button>                
+                    </div>
+                    
+                    <div> 
+                        <button onclick="symbol3()" class="simbolos">»</button>
+                        <button onclick="symbol4()" class="simbolos">→</button>
+                    </div>
+
+                </div> 
+
 
             </div>
            
 
-            <div>Nome do cliente: <br> <input type="text" id="nome-temp" class="big" autocomplete="off"></div>
-            <div>E-mail: <br> <input type="text" id="mail-temp" class="big" autocomplete="off"></div>
-            <div>Telefone: <br> <input type="text" id="tel-temp" class="big" autocomplete="off"></div>
-            <div>Dispositivo: <br> <input type="text" id="disp-temp" class="big" autocomplete="off"></div>
-            <div>Plano: <br> <input type="text" id="plan-temp" class="big" autocomplete="off"></div>
-            <div>Provedor: <br> <input type="text" id="prov-temp" class="big" autocomplete="off"></div>
-            <div>Protocolo: <br> <input type="text" id="proto-temp" class="big" autocomplete="off"></div>
+            <div><span>Nome do cliente:</span> <br> <input type="text" id="nome-temp" class="big" autocomplete="off"></div>
+            <div><span>E-mail:</span> <br> <input type="text" id="mail-temp" class="big" autocomplete="off"></div>
+            <div><span>Telefone:</span> <br> <input type="text" id="tel-temp" class="big" autocomplete="off"></div>
+            <div><span>Dispositivo:</span> <br> <input type="text" id="disp-temp" class="big" autocomplete="off"></div>
+            <div><span>Plano:</span> <br> <input type="text" id="plan-temp" class="big" autocomplete="off"></div>
+            <div><span>Provedor:</span> <br> <input type="text" id="prov-temp" class="big" autocomplete="off"></div>
+            <div><span>Protocolo:</span> <br> <input type="text" id="proto-temp" class="big" autocomplete="off"></div>
 
 
             <br>
 
             <div class="title fonte-manual">terceiro:</div>
-            <div>Nome: <br> <input type="text" id="terc-temp" class="big" autocomplete="off"></div>
-            <div>Vínculo: <br> <input type="text" id="vinc-temp" class="big" autocomplete="off" value="n/a"></div>
+            <div><span>Nome:</span> <br> <input type="text" id="terc-temp" class="big" autocomplete="off"></div>
+            <div><span>Vínculo:</span> <br> <input type="text" id="vinc-temp" class="big" autocomplete="off" value="n/a"></div>
 
             <br>
 
-            <div>Motivo Contato: <br> <textarea name="" autocomplete="off" class="text-fix" id="motivo-temp" rows="5" cols="47"></textarea></div>
-            <div>Resumo Contato: <br> <textarea name="" autocomplete="off" class="text-fix" id="resumo-temp" rows="2" cols="47"></textarea></div>
+            <div><span>Motivo Contato:</span> <br> <textarea name="" autocomplete="off" class="text-fix" id="motivo-temp" rows="5" cols="47"></textarea></div>
+            <div><span>Resumo Contato:</span> <br> <textarea name="" autocomplete="off" class="text-fix" id="resumo-temp" rows="2" cols="47"></textarea></div>
             <div class="center">
                 <div class="title fonte-manual">etapas:</div> <br>
-                <button onclick="somaEtapa()"> Copiar</button> <br> <br>
+
+                <div class="flex">
+
+                    <button onclick="somaEtapa()"> Copiar</button>
+
+                    <div class="square">
+    
+                        <div>
+                            <button onclick="symbol1()" class="simbolos">•</button>
+                            <button onclick="symbol2()" class="simbolos">—</button>                
+                        </div>
+                        
+                        <div> 
+                            <button onclick="symbol3()" class="simbolos">»</button>
+                            <button onclick="symbol4()" class="simbolos">→</button>
+                        </div>
+    
+                    </div> 
+    
+
+                </div>
+            
+
+                 <br> <br>
                 <input type="text" value="" autocomplete="off" class="big" id="etapa1">
                 <input type="text" value="" autocomplete="off" class="big" id="etapa2">
                 <input type="text" value="" autocomplete="off" class="big" id="etapa3">
@@ -98,12 +137,16 @@
                 <input type="text" value="" autocomplete="off" class="big" id="etapa8">
                 <input type="text" value="" autocomplete="off" class="big" id="etapa9">
                 <input type="text" value="" autocomplete="off" class="big" id="etapa10">
-   
+                <input type="text" value="" autocomplete="off" class="big" id="etapa11">
+                <input type="text" value="" autocomplete="off" class="big" id="etapa12">
+                <input type="text" value="" autocomplete="off" class="big" id="etapa13">
+                <input type="text" value="" autocomplete="off" class="big" id="etapa14">
+                <input type="text" value="" autocomplete="off" class="big" id="etapa15">   
             </div>
 
-            <div>Feedback/Sentimento: <br> <input class="big" autocomplete="off" type="text" id="feed-temp" value="n/a"></div>
-            <div>Status: <br> <input class="big" autocomplete="off" type="text" id="stat-temp"></div>
-            <div>Tag: <br> <input class="big" autocomplete="off" type="text" id="tag-temp"></div>
+            <div><span>Feedback/Sentimento:</span> <br> <input class="big" autocomplete="off" type="text" id="feed-temp" value="n/a"></div>
+            <div><span>Status:</span> <br> <input class="big" autocomplete="off" type="text" id="stat-temp"></div>
+            <div><span>Tag:</span> <br> <input class="big" autocomplete="off" type="text" id="tag-temp"></div>
 
             <div class="dados-pagamento hide">
                 <label class="title">Dados de Pagamento</label>
