@@ -14,6 +14,41 @@ function copiar(text) {
   
 }
 
+function del_app(){
+  if(etapa1 = " "){
+    document.getElementById('etapa1').value = "appdelete "
+  }
+  
+}
+
+function des_rot(){
+  document.getElementById('ts_pool').value += "offrouter "
+}
+
+function des_ipv6(){
+  document.getElementById('ts_pool').value += "ipv6 "
+}
+
+function dns_upd(){
+  document.getElementById('ts_pool').value += "dns "
+}
+
+function cabo(){
+  document.getElementById('ts_pool').value += "cabo "
+}
+
+function out_rede(){
+  document.getElementById('ts_pool').value += "altnet "
+}
+
+function out_rede(){
+  document.getElementById('ts_pool').value += "altnet "
+}
+
+function tema(){
+  document.getElementById('ts_pool').value += "altnet "
+}
+
 
 function clearField() {
    document.getElementById('nome-temp').value = "";
@@ -61,6 +96,14 @@ function symbol3(){
 }
 function symbol4(){
   simbolo = "→ "
+}
+
+function spam(){
+
+  document.getElementById('motivo-temp').value = "Cliente entrou em contato, não informou o motivo e ficou inativo"
+  document.getElementById('etapa1').value = "Chat encerrado por falta de comunicação"
+  document.getElementById('stat-temp').value = "Spam"
+
 }
 
 function somaEtapa(){  

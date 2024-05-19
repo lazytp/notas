@@ -22,24 +22,33 @@
         <button>Erro no App</button>
     </div>
 
-    <div class="barra-atalho hide">
-        <button class="etapas">Deletar e reinstalar app</button>
-        <button class="etapas">Desligar e ligar roteador</button>
-        <button class="etapas">Desativar IPv6</button>
-        <button class="etapas">Mudar DNS para 1.1.1.1</button>
-        <button class="etapas">Teste em rede cabeada</button>
-        <button class="etapas">Teste em outra rede</button>
-        <button class="etapas">Limpeza de cache e dados</button>
-        <button class="etapas">Desligar e ligar dispositivo</button>
-        <button class="etapas">Trocar de rede 5G para 2.4G</button>
-        <button class="etapas">Atualizar dispositivo</button>
-        <button class="etapas">Teste no navegador Edge</button>
-        <button class="etapas">Reiniciar o dispositivo</button>
-        <button class="etapas">Atualizar navegador</button>
-        <button class="etapas">Sair e entrar na conta</button>
-        <button class="etapas">Teste de velocidade</button>
-        <button class="etapas">Buscar por atualizações</button>
-        <button class="etapas">Envio de e-mail de resgate de senha</button>
+    <div class="barra-atalho">
+        <!-- <button class="etapas" onclick="del_app()">Deletar e reinstalar app</button>
+        <button class="etapas" onclick="des_rot()">Desligar e ligar roteador</button>
+        <button class="etapas" onclick="des_ipv6()">Desativar IPv6</button>        
+        <button class="etapas" onclick="dns_upd()">Mudar DNS para 1.1.1.1</button>        
+        <button class="etapas" onclick="cabo()">Teste em rede cabeada</button>        
+        <button class="etapas" onclick="out_rede()">Teste em outra rede</button>
+
+        <button class="etapas" onclick="cache()">Limpeza de cache e dados</button>
+        <button class="etapas" onclick="des_lig()">Desligar e ligar dispositivo</button>
+        <button class="etapas" onclick="cincG_quatG()">Trocar de rede 5G para 2.4G</button>
+        <button class="etapas" onclick="update()">Atualizar dispositivo</button>
+        <button class="etapas" onclick="edge()">Teste no navegador Edge</button>
+        <button class="etapas" onclick="reboot()">Reiniciar o dispositivo</button>
+        <button class="etapas" onclick="b_update()">Atualizar navegador</button>
+        <button class="etapas" onclick="logoff()">Sair e entrar na conta</button>
+        <button class="etapas" onclick="incognito()">Abrir em aba anônima</button>
+        <button class="etapas" onclick="spedtest()">Teste de velocidade</button>
+        <button class="etapas" onclick="pass_mail()">Envio de e-mail de resgate de senha</button> -->
+        <button class="etapas title" onclick="spam()">spam</button>
+        <!-- <button class="etapas title" onclick="android()">android</button>
+        <button class="etapas title" onclick="warner()">warner</button>
+        <button class="etapas title" onclick="mercadolivre()">mercadolivre</button> -->
+        <!-- <button class="etapas" onclick="tema()">Tema</button> -->
+        <textarea name="" class="hide" id="ts_pool"></textarea>
+                <!-- <button class="etapas" onclick="">Buscar por atualizações</button> -->
+
         <!-- <button class="etapas">Prints de cobrança em anexo</button>
         <button class="etapas">Compra dentro dos 7 dias</button>
         <button class="etapas">Cliente nunca perdeu a promoção antes</button> -->
@@ -60,6 +69,7 @@
 
             <div class="button-div">
                 <button class="copy-button" onclick="somaEtapa()">Copiar</button>
+                <button class="copy-button spam hide" onclick="spam()">Spam</button>
                 <button class="delete-button" onclick="clearField()">Apagar</button>
                 <button class="restore-button hide">Restaurar</button>    
                 

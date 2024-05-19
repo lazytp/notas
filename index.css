@@ -125,14 +125,19 @@ body {
 
 }
 
+.spam{
+    background-color: rgb(102, 91, 91);
+    color: blanchedalmond;
+}
+
 .title {
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 32px;
+    font-weight: 540;
     text-align: center;
 
     letter-spacing: -1px;
 
-    color: rgb(187, 187, 187);
+    color: rgb(212, 212, 212);
 
 
     
@@ -244,21 +249,28 @@ span{
 }
 
 .etapas{
-    height: 24px;
 
-    background-color: rgb(229, 255, 0);
+    background-color: rgb(252, 22, 61);
+
+    border: none;
 
     width: auto;
 
-    font-weight: bolder;
-
-    margin: 8px;
+    height: 24px;
 
     font-size: 16px;
 
     text-align: center;
 
-    color: black;
+    color: rgb(255, 255, 255);
+
+    letter-spacing: -1px;
+
+    font-weight: 700;
+
+    font-style: italic;
+
+    padding-right: 3px;   
 
    
 }
