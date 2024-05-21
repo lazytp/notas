@@ -71,7 +71,7 @@ button:hover {
     /* background-color: rgb(52, 255, 137); */
     background-color: rgb(255, 218, 52);
     
-    height: 40px;
+    height: 38px;
     width: 230px;
 }
 
@@ -90,7 +90,7 @@ button:hover {
 
     background-color: rgb(235, 108, 108);
 
-    height: 40px;
+    height: 38px;
     width: 80px;
 
 }
@@ -291,4 +291,15 @@ span{
 
     border: solid 1px rgb(228, 228, 228);
 
+}
+
+.btnPlus{
+    border-radius: 100px;
+    width: 60px;
+    font-weight: bold;
+    font-size: 20px;   
+
+    background-color: transparent;
+    text-decoration: none;
+    
 }

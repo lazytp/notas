@@ -11,7 +11,20 @@ function copiar(text) {
   .catch(err => {
     console.error('Could not copy text: ', err);
   });
-  
+
+}
+
+function tabRename(){
+
+    // Assume you have a variable named 'content' with the content you want to display
+    var content = "This is the content of the variable.";
+
+    // Find the element where you want to display the content
+    var titleName = document.getElementById("title");
+ 
+    // Set the innerHTML of that element to the content of the variable
+    titleName.innerHTML = document.getElementById('proto-temp').value;
+
 }
 
 function del_app(){

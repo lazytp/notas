@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title id="title"></title>
     <script src="index.js"></script>
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Freehand&display=swap" rel="stylesheet">
@@ -70,6 +70,7 @@
             <div class="button-div">
                 <button class="copy-button" onclick="somaEtapa()">Copiar</button>
                 <button class="copy-button spam hide" onclick="spam()">Spam</button>
+                <button class="btnPlus"> <a class="btnPlus" href="https://lazytp.github.io/notas/" target="_blank">+</a></button>
                 <button class="delete-button" onclick="clearField()">Apagar</button>
                 <button class="restore-button hide">Restaurar</button>    
                 
@@ -98,7 +99,7 @@
             <div><span>Dispositivo:</span> <br> <input type="text" id="disp-temp" class="big" autocomplete="off"></div>
             <div><span>Plano:</span> <br> <input type="text" id="plan-temp" class="big" autocomplete="off"></div>
             <div><span>Provedor:</span> <br> <input type="text" id="prov-temp" class="big" autocomplete="off"></div>
-            <div><span>Protocolo:</span> <br> <input type="text" id="proto-temp" class="big" autocomplete="off"></div>
+            <div><span>Protocolo:</span> <br> <input oninput="tabRename()" type="text" id="proto-temp" class="big" autocomplete="off"></div>
 
 
             <br>
